@@ -10,6 +10,10 @@ navlists.forEach(navlist => {
 const active = document.querySelector('#active');
 const item = document.querySelectorAll('li');
 
+/*por ahora creo que tenemos un error de logica, ya que el elemento se posiciona encima del elemento li
+pero lo sobre pone, cuando se supone que el li debe estar encima del elemento activo, por lo que no se
+puede hacer click en el elemento li, ya que el elemento activo lo esta sobre poniendo
+*/
 function slide(e){
     active.style.top = e.offsetTop+"px";
 }
