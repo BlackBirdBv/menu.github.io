@@ -35,7 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const dropdown = document.getElementById("user-dropdown");
     const dropdownContent = dropdown.querySelector(".dropdown-content");
 
-    dropdown.addEventListener("click", function () {
+    dropdown.addEventListener("click", function (event) {
+        event.stopPropagation(); // Evita que el clic se propague a elementos internos
         dropdownContent.classList.toggle("open");
+    });
+
+    dropdownContent.addEventListener("click", function (event) {
+        event.stopPropagation(); // Evita que el clic en elementos internos se propague al menú
     });
 });
