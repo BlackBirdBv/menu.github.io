@@ -44,3 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
         event.stopPropagation(); // Evita que el clic en elementos internos se propague al menú
     });
 });
+
+
+// codigo animacion de cards

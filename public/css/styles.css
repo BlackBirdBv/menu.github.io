@@ -13,6 +13,7 @@
 
 
     --denisse: #fff;
+    --sam: #e3e6e7;
     --david: #b3b1b1;
     --jairo: #d9d9d964;
     --bielka-xD: #000;
@@ -42,6 +43,7 @@
     box-shadow: 1px 1px 5px var(--david);
     transition: all 0.2s;
     z-index: 10;
+    /* position: fixed; */
 }
 
 .nav-cont-title {
@@ -364,16 +366,19 @@
 
 .card-area{
     display: flex;
-    margin: 15px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 15px;
 }
 
 .card{
-    width: 300px;
+    min-width: 350px;
     height: 350px;
-    background-color: #fff;
+    background-color: var(--denisse);
     border-radius: 10px;
     box-shadow: 0 0 10px #0000005c;
     overflow: hidden;
+    margin: 20px;
 }
 
 .card img{
@@ -387,7 +392,34 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:10px;
+    padding: 5px 10px;
+}
+
+.perfil-cont{
+    display: flex;
+    align-items: center;
+}
+
+.perfil-card{
+    background-color: var(--sam);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.name-card{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 150px;
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.time-card{
+    color: var(--david);
+    font-size: 14px;
 }
 
 .tl-card{
@@ -396,37 +428,26 @@
 
 .cash-card{
     display: flex;
-    color: #00570d;
-    font-size: 18px;
+    color: var(--prin  );
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .cord {
     font-size: 10px;
+    font-weight: 800;
 }
 
-
-.name-card{
-    display: flex;
-    align-items: center;
-    height: 30px;
-    width: 100%;
-    margin-left: 15px;
-    font-size: 15px;
-}
-
-.btn-card{
-    height: 40px;
-    width: 130px;
-    border-radius: 15px;
-    border: none;
-    margin-left: 10px;
-    font-weight: 500;
+.info-card{
+    color: var(--david);
+    width: 90%;
+    margin: 0 auto;
 }
 
 /* Carga de cards */
 
 .skeleton{
-    background-color: #e3e6e7;
+    background-color: var(--sam);
     background-image: linear-gradient(
         90deg,
         rgba(225, 225, 225, 0),
@@ -442,14 +463,27 @@
 .skel{
     width: 110px;
     height: 30px;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.perfil-skel{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.nm-skel{
+    width: 95%;
+    height: 30px;
+    border-radius: 10px;
+    margin: 5px auto;
 }
 
 .p-skel{
-    width: 95%;
-    height: 140px;
-    border-radius: 5px;
-    margin: 10px auto;
+    width: 130px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 3px 10px;
 }
 
 .img-skel{
